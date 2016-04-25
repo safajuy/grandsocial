@@ -1,0 +1,21 @@
+.s1 a, .s1 a:hover, .s2 a, .s2 a:hover, .s3 a, .s3 a:hover, .s4 a, .s4 a:hover, .s5 a, .s5 a:hover, .s6 a, .s6 a:hover, .s7 a, .s7 a:hover, .s8 a, .s8 a:hover, .s9 a, .s9 a:hover, .s10 a, .s10 a:hover, .s11 a, .s11 a:hover, .s12 a, .s12 a:hover {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.grandicons{ content:""}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }

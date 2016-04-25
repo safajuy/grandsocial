@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>MOD_GRANDSOCIAL</name>
+	<author>Milad Safajuy</author>
+	<creationDate>August 2015</creationDate>
+	<copyright>Copyright (C) 2005 - 2015 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@grand.ir</authorEmail>
+	<authorUrl>www.grand.ir</authorUrl>
+	<version>1.0.1</version>
+	<description>MOD_GRANDSOCIAL_XML_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_grandsocial">mod_grandsocial.php</filename>
+		<folder>tmpl</folder>
+		<folder>languages</folder>
+		<folder>css</folder>
+		<folder>fonts</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">languages/en-GB/en-GB.mod_grandsocial.ini</language>
+		<language tag="en-GB">languages/en-GB/en-GB.mod_grandsocial.sys.ini</language>
+		<language tag="fa-IR">languages/fa-IR/fa-IR.mod_grandsocial.ini</language>
+		<language tag="fa-IR">languages/fa-IR/fa-IR.mod_grandsocial.sys.ini</language>
+		<language tag="prs-AF">languages/prs-AF/prs-AF.mod_grandsocial.ini</language>
+		<language tag="prs-AF">languages/prs-AF/prs-AF.mod_grandsocial.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="options" label="COM_MODULES_BASIC_FIELDSET_LABEL">
+				<field name="openwin" type="list" default="_self" label="MOD_GRANDSOCIAL_TARGET" description="MOD_GRANDSOCIAL_TARGET_DESC">
+				  <option value="_self">MOD_GRANDSOCIAL_SELF</option>
+				  <option value="_blank">MOD_GRANDSOCIAL_NEWWINDOWS</option>
+				</field>
+				
+				<field name="sizeicon" type="list" default="" label="MOD_GRANDSOCIAL_ICONSIZE" description="MOD_GRANDSOCIAL_ICONSIZE_DESC">
+				  <option value="">MOD_GRANDSOCIAL_SMALL</option>
+				  <option value="fa-lg">MOD_GRANDSOCIAL_LARGE</option>
+				  <option value="fa-2x">MOD_GRANDSOCIAL_2XLARGE</option>
+				  <option value="fa-3x">MOD_GRANDSOCIAL_3XLARGE</option>
+				  <option value="fa-4x">MOD_GRANDSOCIAL_4XLARGE</option>
+				  <option value="fa-5x">MOD_GRANDSOCIAL_5XLARGE</option>
+				</field>
+				
+				<field name="borderradius" type="list" default="" label="MOD_GRANDSOCIAL_BORDERRADIUS" description="MOD_GRANDSOCIAL_BORDERRADIUS_DESC">
+				  <option value="100%">100%</option>
+				  <option value="50%">50%</option>
+				  <option value="25%">25%</option>
+				  <option value="12%">12%</option>
+				  <option value="6%">6%</option>
+				  <option value="3%">3%</option>
+				  <option value="none">JNONE</option>
+				</field>
+				
+				<field name="align" type="list" default="left" label="MOD_GRANDSOCIAL_ALIGN" description="MOD_GRANDSOCIAL_ALIGN_DESC">
+				  <option value="none">JNONE</option>
+				  <option value="right">JGLOBAL_LEFT</option>
+				  <option value="left">JGLOBAL_LEFT</option>
+				</field>
+				
+				<field name="padding" type="text" default="5%" label="MOD_GRANDSOCIAL_PADDING" description="MOD_GRANDSOCIAL_PADDING_DESC" />
+				
+				<field name="margl" type="text" default="0" label="MOD_GRANDSOCIAL_MARGL" description="MOD_GRANDSOCIAL_MARGL_DESC" />
+				
+				<field name="margr" type="text" default="3%" label="MOD_GRANDSOCIAL_MARGR" description="MOD_GRANDSOCIAL_MARGR_DESC" />
+				
+			</fieldset>
+			
+			<fieldset name="icons" label="MOD_GRANDSOCIAL_ICONS" description="MOD_GRANDSOCIAL_ICONS_DESC">
+				<field name="icon1" type="text" default="home" label="MOD_GRANDSOCIAL_ICON_1" description="MOD_GRANDSOCIAL_ICON_DESC" size="10" />
+				<field name="icon2" type="text" default="facebook" label="MOD_GRANDSOCIAL_ICON_2" description="MOD_GRANDSOCIAL_ICON_DESC" size="10" />
+				<field name="icon3" type="text" default="twitter" label="MOD_GRANDSOCIAL_ICON_3" description="MOD_GRANDSOCIAL_ICON_DESC" size="10" />
+				<field name="icon4" type="text" default="instagram" label="MOD_GRANDSOCIAL_ICON_4" description="MOD_GRANDSOCIAL_ICON_DESC" size="10" />
+				<field name="icon5" type="text" default="linkedin" label="MOD_GRANDSOCIAL_ICON_5" description="MOD_GRANDSOCIAL_ICON_DESC" size="10" />
+				<field name="icon6" type="text" default="google-plus" label="MOD_GRANDSOCIAL_ICON_6" description="MOD_GRANDSOCIAL_ICON_DESC" size="10" />
+				<field name="icon7" type="text" default="pinterest" label="MOD_GRANDSOCIAL_ICON_7" description="MOD_GRANDSOCIAL_ICON_DESC" size="10" />
+				<field name="icon8" type="text" default="skype" label="MOD_GRANDSOCIAL_ICON_8" description="MOD_GRANDSOCIAL_ICON_DESC" size="10" />
+				<field name="icon9" type="text" default="soundcloud" label="MOD_GRANDSOCIAL_ICON_9" description="MOD_GRANDSOCIAL_ICON_DESC" size="10" />
+				<field name="icon10" type="text" default="youtube" label="MOD_GRANDSOCIAL_ICON_10" description="MOD_GRANDSOCIAL_ICON_DESC" size="10" />
+				<field name="icon11" type="text" default="digg" label="MOD_GRANDSOCIAL_ICON_11" description="MOD_GRANDSOCIAL_ICON_DESC" size="10" />
+				<field name="icon12" type="text" default="paper-plane" label="MOD_GRANDSOCIAL_ICON_12" description="MOD_GRANDSOCIAL_ICON_DESC" size="10" />
+			</fieldset>
+			
+			<fieldset name="bgcolor" label="MOD_GRANDSOCIAL_BACKGROUNDS" description="MOD_GRANDSOCIAL_BACKGROUNDS_DESC">
+				<field name="bgcolor1" type="color" default="none" label="MOD_GRANDSOCIAL_BACKGROUND_1" description="MOD_GRANDSOCIAL_BACKGROUND_DESC" size="10" />
+				<field name="bgcolor2" type="color" default="none" label="MOD_GRANDSOCIAL_BACKGROUND_2" description="MOD_GRANDSOCIAL_BACKGROUND_DESC" size="10" />
+				<field name="bgcolor3" type="color" default="none" label="MOD_GRANDSOCIAL_BACKGROUND_3" description="MOD_GRANDSOCIAL_BACKGROUND_DESC" size="10" />
+				<field name="bgcolor4" type="color" default="none" label="MOD_GRANDSOCIAL_BACKGROUND_4" description="MOD_GRANDSOCIAL_BACKGROUND_DESC" size="10" />
+				<field name="bgcolor5" type="color" default="none" label="MOD_GRANDSOCIAL_BACKGROUND_5" description="MOD_GRANDSOCIAL_BACKGROUND_DESC" size="10" />
+				<field name="bgcolor6" type="color" default="none" label="MOD_GRANDSOCIAL_BACKGROUND_6" description="MOD_GRANDSOCIAL_BACKGROUND_DESC" size="10" />
+				<field name="bgcolor7" type="color" default="none" label="MOD_GRANDSOCIAL_BACKGROUND_7" description="MOD_GRANDSOCIAL_BACKGROUND_DESC" size="10" />
+				<field name="bgcolor8" type="color" default="none" label="MOD_GRANDSOCIAL_BACKGROUND_8" description="MOD_GRANDSOCIAL_BACKGROUND_DESC" size="10" />
+				<field name="bgcolor9" type="color" default="none" label="MOD_GRANDSOCIAL_BACKGROUND_9" description="MOD_GRANDSOCIAL_BACKGROUND_DESC" size="10" />
+				<field name="bgcolor10" type="color" default="none" label="MOD_GRANDSOCIAL_BACKGROUND_10" description="MOD_GRANDSOCIAL_BACKGROUND_DESC" size="10" />
+				<field name="bgcolor11" type="color" default="none" label="MOD_GRANDSOCIAL_BACKGROUND_11" description="MOD_GRANDSOCIAL_BACKGROUND_DESC" size="10" />
+				<field name="bgcolor12" type="color" default="none" label="MOD_GRANDSOCIAL_BACKGROUND_12" description="MOD_GRANDSOCIAL_BACKGROUND_DESC" size="10" />
+				
+			</fieldset>
+			
+			
+			<fieldset name="color" label="MOD_GRANDSOCIAL_COLORS" description="MOD_GRANDSOCIAL_COLORS_DESC">
+				<field name="color1" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_1" description="MOD_GRANDSOCIAL_COLOR_DESC" size="10" />
+				<field name="color2" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_2" description="MOD_GRANDSOCIAL_COLOR_DESC" size="10" />
+				<field name="color3" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_3" description="MOD_GRANDSOCIAL_COLOR_DESC" size="10" />
+				<field name="color4" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_4" description="MOD_GRANDSOCIAL_COLOR_DESC" size="10" />
+				<field name="color5" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_5" description="MOD_GRANDSOCIAL_COLOR_DESC" size="10" />
+				<field name="color6" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_6" description="MOD_GRANDSOCIAL_COLOR_DESC" size="10" />
+				<field name="color7" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_7" description="MOD_GRANDSOCIAL_COLOR_DESC" size="10" />
+				<field name="color8" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_8" description="MOD_GRANDSOCIAL_COLOR_DESC" size="10" />
+				<field name="color9" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_9" description="MOD_GRANDSOCIAL_COLOR_DESC" size="10" />
+				<field name="color10" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_10" description="MOD_GRANDSOCIAL_COLOR_DESC" size="10" />
+				<field name="color11" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_11" description="MOD_GRANDSOCIAL_COLOR_DESC" size="10" />
+				<field name="color12" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_12" description="MOD_GRANDSOCIAL_COLOR_DESC" size="10" />
+			</fieldset>
+			
+			<fieldset name="colorhover" label="MOD_GRANDSOCIAL_COLORS_HOVER" description="MOD_GRANDSOCIAL_COLORS_HOVER_DESC">
+				<field name="colorhover1" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_HOVER_1" description="MOD_GRANDSOCIAL_COLOR_HOVER_DESC" size="10" />
+				<field name="colorhover2" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_HOVER_2" description="MOD_GRANDSOCIAL_COLOR_HOVER_DESC" size="10" />
+				<field name="colorhover3" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_HOVER_3" description="MOD_GRANDSOCIAL_COLOR_HOVER_DESC" size="10" />
+				<field name="colorhover4" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_HOVER_4" description="MOD_GRANDSOCIAL_COLOR_HOVER_DESC" size="10" />
+				<field name="colorhover5" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_HOVER_5" description="MOD_GRANDSOCIAL_COLOR_HOVER_DESC" size="10" />
+				<field name="colorhover6" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_HOVER_6" description="MOD_GRANDSOCIAL_COLOR_HOVER_DESC" size="10" />
+				<field name="colorhover7" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_HOVER_7" description="MOD_GRANDSOCIAL_COLOR_HOVER_DESC" size="10" />
+				<field name="colorhover8" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_HOVER_8" description="MOD_GRANDSOCIAL_COLOR_HOVER_DESC" size="10" />
+				<field name="colorhover9" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_HOVER_9" description="MOD_GRANDSOCIAL_COLOR_HOVER_DESC" size="10" />
+				<field name="colorhover10" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_HOVER_10" description="MOD_GRANDSOCIAL_COLOR_HOVER_DESC" size="10" />
+				<field name="colorhover11" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_HOVER_11" description="MOD_GRANDSOCIAL_COLOR_HOVER_DESC" size="10" />
+				<field name="colorhover12" type="color" default="#000" label="MOD_GRANDSOCIAL_COLOR_HOVER_12" description="MOD_GRANDSOCIAL_COLOR_HOVER_DESC" size="10" />
+			</fieldset>
+			
+			<fieldset name="links" label="MOD_GRANDSOCIAL_LINKS" description="MOD_GRANDSOCIAL_LINKS_DESC">
+				<field name="link1" type="url" default="/index" label="MOD_GRANDSOCIAL_LINK_1" description="MOD_GRANDSOCIAL_LINK_DESC" size="10" />
+				<field name="link2" type="url" default="https://facebook.com/" label="MOD_GRANDSOCIAL_LINK_2" description="MOD_GRANDSOCIAL_LINK_DESC" size="10" />
+				<field name="link3" type="url" default="https://twitter.com/" label="MOD_GRANDSOCIAL_LINK_3" description="MOD_GRANDSOCIAL_LINK_DESC" size="10" />
+				<field name="link4" type="url" default="https://instagram.com/+" label="MOD_GRANDSOCIAL_LINK_4" description="MOD_GRANDSOCIAL_LINK_DESC" size="10" />
+				<field name="link5" type="url" default="http://ir.linkedin.com" label="MOD_GRANDSOCIAL_LINK_5" description="MOD_GRANDSOCIAL_LINK_DESC" size="10" />
+				<field name="link6" type="url" default="https://plus.google.com/+" label="MOD_GRANDSOCIAL_LINK_6" description="MOD_GRANDSOCIAL_LINK_DESC" size="10" />
+				<field name="link7" type="url" default="#" label="MOD_GRANDSOCIAL_LINK_7" description="MOD_GRANDSOCIAL_LINK_DESC" size="10" />
+				<field name="link8" type="url" default="#" label="MOD_GRANDSOCIAL_LINK_8" description="MOD_GRANDSOCIAL_LINK_DESC" size="10" />
+				<field name="link9" type="url" default="#" label="MOD_GRANDSOCIAL_LINK_9" description="MOD_GRANDSOCIAL_LINK_DESC" size="10" />
+				<field name="link10" type="url" default="#" label="MOD_GRANDSOCIAL_LINK_10" description="MOD_GRANDSOCIAL_LINK_DESC" size="10" />
+				<field name="link11" type="url" default="#" label="MOD_GRANDSOCIAL_LINK_11" description="MOD_GRANDSOCIAL_LINK_DESC" size="10" />
+				<field name="link12" type="url" default="#" label="MOD_GRANDSOCIAL_LINK_12" description="MOD_GRANDSOCIAL_LINK_DESC" size="10" />
+			</fieldset>
+			
+			<fieldset name="displayicons" label="MOD_GRANDSOCIAL_DISPLAY" description="MOD_GRANDSOCIAL_DISPLAY_DESC">
+			
+				<field name="dis1" type="radio" default="none" label="MOD_GRANDSOCIAL_ICON_1" class="radio btn-group btn-group-yesno" description="">
+				  <option value="none">JHIDE</option>
+				  <option value="inline">JSHOW</option>
+				</field>
+				
+				<field name="dis2" type="radio" default="none" label="MOD_GRANDSOCIAL_ICON_2" class="radio btn-group btn-group-yesno" description="">
+				  <option value="none">JHIDE</option>
+				  <option value="inline">JSHOW</option>
+				</field>
+				
+				<field name="dis3" type="radio" default="none" label="MOD_GRANDSOCIAL_ICON_3" class="radio btn-group btn-group-yesno" description="">
+				  <option value="none">JHIDE</option>
+				  <option value="inline">JSHOW</option>
+				</field>
+				
+				<field name="dis4" type="radio" default="none" label="MOD_GRANDSOCIAL_ICON_4" class="radio btn-group btn-group-yesno" description="">
+				  <option value="none">JHIDE</option>
+				  <option value="inline">JSHOW</option>
+				</field>
+				
+				<field name="dis5" type="radio" default="none" label="MOD_GRANDSOCIAL_ICON_5" class="radio btn-group btn-group-yesno" description="">
+				  <option value="none">JHIDE</option>
+				  <option value="inline">JSHOW</option>
+				</field>
+				
+				<field name="dis6" type="radio" default="none" label="MOD_GRANDSOCIAL_ICON_6" class="radio btn-group btn-group-yesno" description="">
+				  <option value="none">JHIDE</option>
+				  <option value="inline">JSHOW</option>
+				</field>
+				
+				<field name="dis7" type="radio" default="none" label="MOD_GRANDSOCIAL_ICON_7" class="radio btn-group btn-group-yesno" description="">
+				  <option value="none">JHIDE</option>
+				  <option value="inline">JSHOW</option>
+				</field>
+				
+				<field name="dis8" type="radio" default="none" label="MOD_GRANDSOCIAL_ICON_8" class="radio btn-group btn-group-yesno" description="">
+				  <option value="none">JHIDE</option>
+				  <option value="inline">JSHOW</option>
+				</field>
+				
+				<field name="dis9" type="radio" default="none" label="MOD_GRANDSOCIAL_ICON_9" class="radio btn-group btn-group-yesno" description="">
+				  <option value="none">JHIDE</option>
+				  <option value="inline">JSHOW</option>
+				</field>
+				
+				<field name="dis10" type="radio" default="none" label="MOD_GRANDSOCIAL_ICON_10" class="radio btn-group btn-group-yesno" description="">
+				  <option value="none">JHIDE</option>
+				  <option value="inline">JSHOW</option>
+				</field>
+				
+				<field name="dis11" type="radio" default="none" label="MOD_GRANDSOCIAL_ICON_11" class="radio btn-group btn-group-yesno" description="">
+				  <option value="none">JHIDE</option>
+				  <option value="inline">JSHOW</option>
+				</field>
+				
+				<field name="dis12" type="radio" default="none" label="MOD_GRANDSOCIAL_ICON_12" class="radio btn-group btn-group-yesno" description="">
+				  <option value="none">JHIDE</option>
+				  <option value="inline">JSHOW</option>
+				</field>
+			</fieldset>
+			
+		</fields>
+	</config>
+</extension>
