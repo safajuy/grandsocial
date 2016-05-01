@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.1" client="site" method="upgrade">
 	<name>MOD_GRANDSOCIAL</name>
-	<author>Milad Safajuy</author>
+	<author>Jpart Team</author>
 	<creationDate>August 2015</creationDate>
 	<copyright>Copyright (C) 2005 - 2015 Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<authorEmail>info@grand.ir</authorEmail>
-	<authorUrl>www.grand.ir</authorUrl>
+	<authorEmail>info@jpart.ir</authorEmail>
+	<authorUrl>www.jpart.ir</authorUrl>
 	<version>1.0.1</version>
 	<description>MOD_GRANDSOCIAL_XML_DESCRIPTION</description>
 
